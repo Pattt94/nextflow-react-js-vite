@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import CounterComponent from './CounterComponent';
 
 const Hello = (props) => {
 
@@ -17,7 +18,7 @@ const Hello = (props) => {
 
 function Goodbye () {
   return (
-    <div>
+    <div className='palegray'>
       <h2>Bye, bye</h2>
     </div>
 
@@ -37,6 +38,7 @@ function App() {
       <Hello username="Annie"/>
       <Goodbye/>
       <button onClick={onGreet}>Greeting</button>
+      <CounterComponent/>
     </div>
   );
   
